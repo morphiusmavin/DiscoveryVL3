@@ -1,0 +1,11 @@
+.project.bak
+.settings/com.atollic.truestudio.debug.hardware_device.prefs
+.settings/org.eclipse.cdt.managedbuilder.core.prefs
+DiscoveryVL3.elf.launch
+Release/*
+Debug/*
+.metadata/.lock
+.metadata/.log
+.metadata/.mylyn/
+.metadata/.plugins/
+
