@@ -148,9 +148,7 @@ void init_DS1620(void)
 	HAL_GPIO_WritePin(GPIOB, DS1620_PIN_DQ | DS1620_PIN_CLK | DS1620_PIN_RST, GPIO_PIN_RESET);
 	GPIO_InitStruct.Pin = DS1620_PIN_DQ | DS1620_PIN_CLK | DS1620_PIN_RST;
 	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-	GPIO_InitStruct.Mode = GPIO_PULLUP;
-//	GPIO_InitStruct.Pull = GPIO_NOPULL;
-//	GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+	GPIO_InitStruct.Pull = GPIO_PULLUP;
 	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
 	HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
